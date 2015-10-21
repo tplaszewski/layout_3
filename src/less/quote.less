@@ -1,0 +1,33 @@
+.quote{
+    background-image: url(../img/quote_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 2.2rem;
+    line-height: 4.8rem;
+    padding-top: 100px;
+    padding-bottom: 20%;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 300;
+    font-style: italic;
+    .content{
+        position: relative;
+        h5{
+            font-size: 3.2rem;
+        }
+        p{
+            font-size: 2.2rem;
+        }
+        .author{
+            //text-align:right;
+            display: block;
+            font-weight: 400;
+            font-style: normal;
+            &::before{
+                content: "- ";
+            }
+        }
+    }
+}

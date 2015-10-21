@@ -39,7 +39,18 @@ section.top{
                     }
                     .button{
                         margin-top: 30px;
-                        padding: 24px 70px;
+                        padding: 11px 60px;
+                        background-color: transparent;
+                        &::after{
+                            background-image: url(../img/ico_arrow.png);
+                        }
+                        &:hover{
+                            background-color: #ee3440;
+                            &::after{
+                                background-image: url(../img/ico_arrow_hover.png) !important;
+                            }
+                        }
+                        
                         
                     }
                 }

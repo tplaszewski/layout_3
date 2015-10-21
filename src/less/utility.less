@@ -31,17 +31,32 @@ a{
     width: 25%;
 }
 .button{
+    border: 2px solid #ee3440;
     text-transform: uppercase;
     display: inline-block;
-    border: 0;
-    background-color: #56553f;
-    color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 0 0 #6e6e55 inset;
+    color: #ee3440;
+    border-radius: 35px;
     transition: all 0.8s ease 0s;
+    font-size: 1.4rem;
+    font-weight: 700;
+    position: relative;
+    &::after{
+        content: "";
+        height: 10px;
+        width: 17px;
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        top:21px;
+        transform: rotate(-360deg);
+        transition: all 0.8s ease 0.2s;
+    }
     &:hover{
-        box-shadow: 0 100px 0 0 #6e6e55 inset;   
-        background-color: #6e6e55;
+        background-color: #ee3440;
         color: white;
+        &::after{
+            transform: rotate(360deg);
+            transition: all 0.8s ease 0.2s;
+        }
     }
 }

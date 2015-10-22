@@ -817,8 +817,20 @@ footer .social li.youtube a {
   .top #slider-top {
     width: 100% !important;
   }
+  .about .img {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .about .img img {
+    position: relative;
+    right: 0;
+    top: 0;
+  }
   .testimonials .testimontials_slider {
     width: 100%;
+  }
+  .testimonials .testimontials_slider .content {
+    margin-bottom: 60px;
   }
   .section-map .content {
     width: 70%;
@@ -843,9 +855,6 @@ footer .social li.youtube a {
   }
   .counter-section article {
     margin-bottom: 20px;
-  }
-  .testimonials .testimontials_slider {
-    padding-right: 110px;
   }
   .testimonials .testimontials_slider .item .carousel-caption {
     padding-right: 0;

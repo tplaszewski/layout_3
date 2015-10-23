@@ -843,6 +843,9 @@ footer .social li.youtube a {
   .one-of-four {
     width: 50%;
   }
+  h3 {
+    font-size: 3.8rem;
+  }
   header .navbar-header .navbar-toggle {
     margin-top: 0;
   }

@@ -182,7 +182,7 @@ table {
 }
 h3 {
   font-size: 4.4rem;
-  color: #000000;
+  color: #1e1e1e;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -245,7 +245,8 @@ a:hover {
           transition: all 0.8s ease 0.2s;
 }
 header.navbar {
-  padding: 37px 0;
+  padding-top: 44px;
+  padding-bottom: 40px;
   position: absolute;
   top: 0;
   left: 0;
@@ -260,6 +261,7 @@ header.navbar .navbar-brand {
   padding-bottom: 0;
   height: auto;
   min-height: 0;
+  margin-bottom: 27px !important;
 }
 header nav ul li {
   font-size: 1.4rem;
@@ -270,6 +272,7 @@ header nav ul li a {
   text-shadow: none;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+  letter-spacing: 0.02rem;
 }
 header nav ul li a:hover {
   background-color: transparent !important;
@@ -336,11 +339,11 @@ footer .social li.youtube a {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 800px;
+  height: 816px;
 }
 #top #slider-top .owl-item .caption {
   position: absolute;
-  top: 40%;
+  top: 41%;
   left: 0;
   width: 100%;
 }
@@ -348,21 +351,22 @@ footer .social li.youtube a {
   font-size: 5.2rem;
   font-weight: 300;
   color: #000000;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 }
 #top #slider-top .owl-item .caption p {
   font-size: 1.6rem;
   line-height: 3rem;
   color: #242424;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 #top #slider-top .owl-item .caption .button {
-  padding: 18px 60px;
+  padding: 18px 70px 18px 69px;
   background-color: transparent;
 }
 #top #slider-top .owl-item .caption .button::after {
   background-image: url(../img/ico_arrow.png);
-  top: 19px;
+  top: 21px;
+  right: 31px;
 }
 #top #slider-top .owl-item .caption .button:hover {
   background-color: #ee3440;
@@ -399,18 +403,19 @@ footer .social li.youtube a {
   display: none;
 }
 .about {
-  padding-bottom: 100px;
-  padding-top: 80px;
+  padding-bottom: 87px;
+  padding-top: 85px;
 }
 .about h3 {
-  margin-bottom: 50px;
+  margin-bottom: 42px;
   text-align: left;
 }
 .about .content {
   font-size: 1.6rem;
   line-height: 3.2rem;
-  margin-bottom: 100px;
+  margin-bottom: 144px;
   text-align: justify;
+  color: #1e1e1e;
 }
 .about article {
   font-size: 1.6rem;
@@ -419,8 +424,8 @@ footer .social li.youtube a {
 .about article h4 {
   font-size: 2.6rem;
   text-transform: uppercase;
-  margin-bottom: 35px;
-  color: #ee3440;
+  margin-bottom: 40px;
+  color: #f1313a;
   font-weight: 300;
 }
 .about article p {
@@ -442,8 +447,8 @@ footer .social li.youtube a {
   background-attachment: fixed;
   font-size: 2.2rem;
   line-height: 4.8rem;
-  padding-top: 100px;
-  padding-bottom: 20%;
+  padding-top: 90px;
+  padding-bottom: 22%;
   text-align: center;
   color: #ffffff;
   font-weight: 300;
@@ -454,36 +459,41 @@ footer .social li.youtube a {
 }
 .quote .content h5 {
   font-size: 3.2rem;
+  margin-bottom: 3px;
 }
 .quote .content p {
   font-size: 2.2rem;
+  margin-bottom: 15px;
 }
 .quote .content .author {
   display: block;
   font-weight: 400;
   font-style: normal;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: white;
 }
 .quote .content .author::before {
   content: "- ";
 }
 .features {
-  padding: 75px 0;
+  padding: 67px 0;
 }
 .features h3 {
-  margin-bottom: 65px;
+  margin-bottom: 54px;
 }
 .features article {
   font-size: 1.6rem;
   margin-bottom: 27px;
-  box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.25);
-  border-radius: 15px;
-  padding: 40px 15px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 32px 15px 48px 15px;
 }
 .features article h4 {
   font-size: 2.6rem;
   text-transform: uppercase;
-  margin-bottom: 35px;
-  color: #ee3440;
+  margin-bottom: 26px;
+  color: #f1313a;
 }
 .features article p {
   line-height: 2.4rem;
@@ -491,10 +501,10 @@ footer .social li.youtube a {
 /* gallery */
 .gallery {
   background-color: #f34d55;
-  padding-top: 90px;
+  padding-top: 63px;
 }
 .gallery h3 {
-  margin-bottom: 56px;
+  margin-bottom: 65px;
   color: white;
 }
 .fancybox-skin {
@@ -520,7 +530,7 @@ footer .social li.youtube a {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
-  z-index: 999999;
+  z-index: 999;
 }
 .gallery_description {
   position: absolute;
@@ -570,7 +580,7 @@ footer .social li.youtube a {
 .counter-section {
   background-color: #f34d55;
   padding-top: 60px;
-  padding-bottom: 80px;
+  padding-bottom: 44px;
   font-weight: 300;
   color: white;
 }
@@ -579,7 +589,7 @@ footer .social li.youtube a {
   border-radius: 15px;
   padding-top: 100px;
   padding-bottom: 120px;
-  background-color: #eb4c53;
+  background-color: #eb4b52;
 }
 .counter-section article div {
   font-size: 2.4rem;
@@ -590,19 +600,20 @@ footer .social li.youtube a {
   font-weight: 300;
 }
 .counter-section article div.bottom {
-  margin-top: 40px;
+  margin-top: 36px;
 }
 .counter-section article div.top {
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 }
 .testimonials {
-  padding: 87px 0;
+  padding: 67px 0;
   position: relative;
   z-index: 9999;
 }
 .testimonials h3 {
-  font-weight: 400;
-  margin-bottom: 66px;
+  font-weight: 300;
+  margin-bottom: 33px;
+  color: #1e1e1e;
 }
 .testimonials .item {
   padding-top: 30px;
@@ -691,6 +702,9 @@ footer .social li.youtube a {
   display: inline-block;
   margin-bottom: 40px;
   color: white;
+  font-size: 3.2rem;
+  font-weight: 300;
+  letter-spacing: 0;
 }
 .contact input {
   border: 1px solid #7b868c;
@@ -703,12 +717,10 @@ footer .social li.youtube a {
   margin-right: 9px;
   margin-bottom: 7px;
   background-color: transparent;
-  text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .contact textarea {
   background-color: transparent;
-  text-transform: uppercase;
   border: 1px solid #7b868c;
   padding-left: 22px;
   padding-top: 15px;
@@ -720,21 +732,21 @@ footer .social li.youtube a {
   max-width: 100%;
   min-width: 100%;
   min-height: 125px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .contact ::-webkit-input-placeholder {
-  color: #7b868c;
+  color: #ffffff;
 }
 .contact :-moz-placeholder {
   /* Firefox 18- */
-  color: #7b868c;
+  color: #ffffff;
 }
 .contact ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #7b868c;
+  color: #ffffff;
 }
 .contact :-ms-input-placeholder {
-  color: #7b868c;
+  color: #ffffff;
 }
 .contact .button {
   background-color: #f1333d;
@@ -884,12 +896,17 @@ html {
   font-weight: 300;
   font-style: normal;
   font-family: 'Open Sans', sans-serif;
-  color: #56553f;
+  color: #1e1e1e;
 }
 body {
   right: 0;
   margin: 0;
   position: relative;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+main {
+  overflow: hidden;
 }
 /* Preloader */
 #preloader {

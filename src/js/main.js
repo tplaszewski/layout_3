@@ -50,41 +50,32 @@ jQuery(document).ready(function( $ ) {
             });
 
 window.onload = function () {
-            var styles = [
-    {
-        "featureType": "all",
-        "elementType": "all",
-        "stylers": [
-            {
-                "invert_lightness": true
-            },
-            {
-                "saturation": 10
-            },
-            {
-                "lightness": 30
-            },
-            {
-                "gamma": 0.5
-            },
-            {
-                "hue": "#435158"
-            }
-        ]
-    }
-];
+            var styles = [ { "featureType": "water", "stylers": [ { "color": "#354148" } ] },{ "featureType": "landscape.man_made", "stylers": [ { "color": "#303c42" } ] },{ "featureType": "landscape.natural", "stylers": [ { "color": "#303c42" } ] },{ "featureType": "road", "stylers": [ { "color": "#333f45" } ] },{ "featureType": "poi", "elementType": "geometry", "stylers": [ { "color": "#333f45" } ] },{ },{ "featureType": "administrative", "elementType": "labels.text.stroke", "stylers": [ { "visibility": "on" } ] },{ } ];
 
         var options = {
             mapTypeControlOptions: {
                 mapTypeIds: ['Styled']
             },
-            center: new google.maps.LatLng(-7.245217594087794, 112.74455556869509),
-            zoom: 16,
+            center: new google.maps.LatLng(-25.463, 128.044),
+            zoom: 8,
             disableDefaultUI: true,	
             mapTypeId: 'Styled'
         };
         var div = document.getElementById('map');
-        var map = new google.maps.Map(div, options);
+    
+        var map = new google.maps.Map(div, options, marker, myLatLng);
+    
+        var myLatLng = {lat: -25.363, lng: 131.044};
+        var image = 'img/marker.png';
+
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            icon: image
+          });
+    
+        marker.setMap(map);
+
         var styledMapType = new google.maps.StyledMapType(styles, { name: 'Styled' });
         map.mapTypes.set('Styled', styledMapType);
         }
@@ -138,3 +129,34 @@ $(document).ready(function() {
   }); 
     
 });
+
+$('.parallax-section').parallax({
+    speed : 0.15
+});
+
+/* hide menu */
+$('.nav a').on('click', function(){
+    $('.navbar-toggle').click(); 
+});
+
+
+/*scroll height */
+
+$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+				var top_offset = 0;
+				if ( $('.navbar').css('position') == 'fixed' ) {
+					top_offset = $('.navbar').height();
+				}
+				 $('html,body').animate({
+					 scrollTop: target.offset().top - top_offset
+				}, 1000);
+				return false;
+			}
+		}
+	});	
+	});

@@ -1,0 +1,127 @@
+
+.contact{
+    font-size: 1.4rem;
+    color: white;
+    text-transform: uppercase;
+    background-color: #3e4d55;
+    padding-top: 75px;
+    padding-bottom: 40px;
+    .form{
+        margin-bottom: 17px;
+    }
+    h3{
+        display: inline-block;
+        margin-bottom: 40px;
+        color: white;
+        font-size: 3.2rem;
+        font-weight: 300;
+        letter-spacing: 0;
+    }
+    input{
+        border: 1px solid #7b868c;
+        padding-left: 22px;
+        padding-top: 15px;
+        padding-bottom: 16px;
+        padding-right: 22px;
+        display: inline-block;
+        width: 100%;
+        margin-right: 9px;
+        margin-bottom: 7px;
+        background-color: transparent;
+        border-radius: 10px;
+    }
+    textarea{
+        background-color: transparent;
+        border: 1px solid #7b868c;
+        padding-left: 22px;
+        padding-top: 15px;
+        padding-bottom: 16px;
+        padding-right: 22px;    
+        display: block;
+        margin-bottom: 7px;
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 125px;
+        border-radius: 10px;
+    }
+    ::-webkit-input-placeholder {
+       color: #ffffff;
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+       color: #ffffff;  
+    }
+
+    ::-moz-placeholder {  /* Firefox 19+ */
+       color: #ffffff;  
+    }
+
+    :-ms-input-placeholder {  
+       color: #ffffff;  
+    }
+    .button{
+        background-color: #f1333d;
+        padding: 15px 90px;
+        margin-top: 30px;
+        color: white;
+        &::after{
+            background-image: url(../img/ico_arrow_hover.png);
+            top:17px;
+        }
+        &:hover{
+            background-color: transparent;
+            &::after{
+                background-image: url(../img/ico_arrow.png) !important;
+            }
+        }
+    }
+    .box{
+        background-color: #fff;
+        color: @black;
+        padding: 30px 40px;
+    }
+    ul{
+        li{
+            display: block;
+            
+            span{
+                display: inline-block;
+                word-break: break-all;
+                line-height: 4.5rem;
+                &.first{
+                    font-weight: 700;
+                    margin-right: 10px;
+                    min-width: 80px;
+                    color: #56553f;
+                }
+            }
+        }
+    }
+    table{
+        tr{
+            td{
+                line-height: 4.5rem;
+                padding: 10px 0;
+                &.first{
+                    margin-right: 10px;
+                    min-width: 80px;    
+                }
+            }
+        }
+    }
+}
+
+.section-map{
+        position: relative;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        min-height: 580px;
+}
+
+#map{
+        width: 100%;
+        height: 100%;
+    position: absolute !important;
+    top: 0;
+    }
